@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment24-27</title>
+</head>
+
+<body>
+
+  <form action="test.py" method="get">
+    <div>
+      <label>Username</label> <br>
+      <input type="text" required placeholder="enter your name" name="username">
+    </div>
+    <!--Username-->
+    <hr>
+    <div>
+      <label>Password</label> <br>
+      <input type="password" placeholder="enter your password" name="pass">
+    </div>
+    <!--Password-->
+    <hr>
+    <div>
+      <label>Mobile</label> <br>
+      <input type="tel" placeholder="+20100 (234) 123" Pattern = "\+[0-9]{5} \([0-9]{3}\) [0-9]{3}" name="mobile"> <!---->
+    </div>
+    <!--Mobile-->
+    <hr>
+    <div>
+      <label>Email</label> <br>
+      <input type="email" required placeholder="enter your email" name="mail">
+    </div>
+    <!--Email-->
+    <hr>
+    <div>
+      <label>Subject</label> <br>
+      <input type="text" placeholder="write your subject" name="sub">
+    </div><!--Subject--><br>
+
+    <div>
+      <input type="text" hidden value="3487">
+    </div> <!--hidden field--> <br>
+
+    <div>
+      <input type="submit" value="Send Data">
+      <input type="reset" value="Empty Form">
+    </div><!--submet & reset buttons--> <br>
+    <div>
+      <img src="imgs/queryAssign24-27.PNG" width="700" alt="">
+    </div><!--this is Query String after sending form data to test.py at network-->
+
+
+
+
+
+
+
+  </form>
+
+</body>
+
+</html>
