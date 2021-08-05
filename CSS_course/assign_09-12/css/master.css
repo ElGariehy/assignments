@@ -1,0 +1,43 @@
+/* start assignment 01 */
+
+  .shape1, .shape2, .shape3{
+    outline: 5px black solid;
+    border:5px solid ;
+    margin: 10px 10px;
+    padding:30px;
+    display: inline-block;
+    background-color: #DDD;
+  }
+  .shape1 {
+    border-color:red  ;
+  }
+  .shape2 {
+    border-color:blue green;
+    border-style:solid;
+  }
+  .shape3 {
+    border-color:red green blue yellow;
+    border-style:dashed;
+  }
+
+  /* start assignment 02 */
+  .sp1, .sp2, .sp3{
+      width: 400px;
+      background-color: #ddd;
+      display: block;
+      margin: 10px 10px;
+      padding: 10px;
+      border-left: 5px solid;
+      outline: 10px #ddd solid;
+      height: 20px;
+  }
+  .sp1{
+      border-color: red;
+  }
+  .sp2{
+      visibility: hidden;
+      border-color: yellow;
+  }
+  .sp3{
+      border-color: green;
+  } 
