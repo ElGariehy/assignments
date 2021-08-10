@@ -1,0 +1,63 @@
+.div_one{
+    width:400px;
+    height:auto;
+    padding:18px;
+    text-align:center;
+    border:3px solid red;
+  }
+  .div_one p{
+    display:inline-block;
+    width:300px;
+    height:inherit;
+    background-color:#eee;
+    padding:inherit;
+    border:inherit;
+  }
+  .div_two{
+    width:400px;
+    height:auto;
+    padding:18px;
+    text-align:center;
+    border:3px solid green;
+  }
+  .div_two p{
+    display:inline-block;
+    width:300px;
+    height:inherit;
+    background-color:#eee;
+    padding:inherit;
+    border:inherit;
+  }
+  /* -------------------------- */
+  .one, .two, .three{
+    text-transform:capitalize;
+    font-size:30px;
+  }
+  .one{
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+  .two{
+    font-family: 'Cairo', sans-serif;
+    
+  }
+  .three{
+    font-family: 'Jomhuria', cursive;
+  }
+  /* -------------------------- */
+  .four, .five, .six{
+    text-transform:capitalize;
+    font-size:20px;
+    text-align:center;
+    font-family:sans-serif;
+  }
+  .four{
+   font-size:2.5rem;
+  }
+  .five{
+     font-size:2rem;
+  }
+  .six{
+    font-size:1.5rem;
+  }
+  
