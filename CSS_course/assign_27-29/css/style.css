@@ -1,0 +1,50 @@
+body{
+  margin-top: 50px;
+}
+
+.contaner{
+  background-color: #ddd;
+  width: 800px;
+  margin: auto;
+}
+.clear{
+  clear: both;
+}
+p{
+  background-color: rgb(59, 16, 57);
+  padding: 15px 0;
+  margin: 15px 0 0 15px;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.full p{
+  width: calc(100% - 30px);
+  text-transform: capitalize;
+}
+.triple p{
+  width: calc((100% - 60px) / 3);
+}
+.double p{
+  width: calc((100% - 45px) / 2);
+}
+.four p{
+  width: calc((100% - 75px) / 4);
+  margin-bottom: 15px;
+}
+.normal, .one, .two {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #b1b0b0;
+  color: black;
+}
+.one, .two{
+  background-color: rgb(177 176 176 / 0.1);
+}
+.two{
+  opacity: .2;
+}
