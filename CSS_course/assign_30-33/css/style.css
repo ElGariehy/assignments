@@ -1,0 +1,82 @@
+.green{
+    width: 100px;
+    height: 100px;
+    background-color:  #009688;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: #f44336;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: #03a9f4;
+    left: 20px;
+    top: 20px; 
+    z-index: 2;
+    position: absolute;
+}
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 40px; 
+    z-index: 1;
+}
+
+.rectangle{
+    width: 400px;
+    margin: auto;
+    top: 200px;
+    position: relative;
+    border: 3px solid;
+    background-color: #eee;
+    text-align: center;
+    padding:20px;
+    border-color: #f44336 #2196f3;
+}
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right{
+    background-color: #2196f3;
+    position: absolute;
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.top-left{
+    top: -17px;
+    left: -21px;
+    border-right: 3px #f44336 solid ;
+}
+.bottom-left{
+    bottom: -17px;
+    left: -21px;
+    border-right: 3px #f44336 solid ;
+}
+.top-right{
+    top: -17px;
+    right: -21px;
+    border-left: 3px #f44336 solid ;
+}
+.bottom-right{
+    bottom: -17px;
+    right: -21px;
+    border-left: 3px #f44336 solid ;
+}
+
