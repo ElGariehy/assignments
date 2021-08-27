@@ -1,0 +1,64 @@
+:root{
+    --eee:#eee;
+    --ddd:#ddd;
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+body{
+    text-align: center;
+}
+.parent{
+    background-color: var(--eee);
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    transition-duration: 1s;
+    transition:1s 0 all ease-in-out ;
+    -webkit-transition:1s 0 all ease-in-out ;
+    -moz-transition:1s 0 all ease-in-out ;
+    -ms-transition:1s 0 all ease-in-out ;
+    -o-transition:1s 0 all ease-in-out ;
+}
+.parent:hover{
+    margin-top: 50px;
+}
+.child{
+    background-color: var(--ddd);
+    width: 400px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    transition:1s 0.3s all ease-in-out ;
+    -webkit-transition:1s 0.3s all ease-in-out ;
+    -moz-transition:1s 0.3s all ease-in-out ;
+    -ms-transition:1s 0.3s all ease-in-out ;
+    -o-transition:1s 0.3s all ease-in-out ;
+}
+.parent:hover .child{
+    margin-top: 50px;
+}
+.two div{
+    width: 400px;
+    margin: auto;
+    
+    background-color: var(--eee) !important;
+    color: black !important;
+    border: none !important;
+    font-size: 0px !important;
+}
+.two div:before{
+    content: "Elzero";
+    font-size: 20px;
+}
+
+ .three div{
+    text-align: start;
+    width: 500px;
+    border: 1px solid var(--mainColor, black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    margin: 0 auto 15px auto;
+    font-weight: bold;
+  }
