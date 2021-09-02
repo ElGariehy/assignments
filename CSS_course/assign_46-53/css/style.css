@@ -1,0 +1,103 @@
+.one div{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #FF5722;
+    box-shadow: 6px 0px #03a9f4, -6px 0px #FF5722;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.two .parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+*{
+    box-sizing: border-box;
+}
+.two .parent div{
+    width: 29.9%;
+    background-color: #FF5722;
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.three .parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-flow: row-reverse wrap-reverse;
+    align-content: stretch;
+}
+.three .parent div{
+    width: 30%;
+    background-color: #607D8B;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 10px;
+}
+ .three .parent .one{
+    align-self: flex-start;
+    order: 1;
+}
+ .three .parent .two{
+    order: 2;
+}
+ .three .parent .three{
+    align-self: flex-end;
+    order: 5;
+}
+ .three .parent .four{
+    order: 4;
+}
+.three .parent .five{
+    order: 3;
+}
+.three .parent .six{
+    order: 6;
+}
+
+.four .parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+}
+.four .parent div{
+    background-color: #009688;
+    padding: 25px;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+.four .parent .two{
+    align-self: flex-start;
+    width: 50%;
+}
