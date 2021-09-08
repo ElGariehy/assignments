@@ -101,3 +101,114 @@
     align-self: flex-start;
     width: 50%;
 }
+
+.five .parent{
+    background-color:#eee;
+    width:600px;
+    height:300px;
+    margin:20px auto;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .five .parent div{
+    width:18%;
+    background-color:red;
+    display:flex;
+    padding:10px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    margin:0 5px;
+    height:50%;
+  }
+  .five .parent .one{
+    order:2;
+    background-color:#FF9800;
+  }
+  .five .parent .two{
+    order:3;
+    align-self:flex-end;
+    background-color:#8BC34A;
+  }
+  .five .parent .three{
+    order:4;
+    background-color:#795548;
+  }
+  .five .parent .four{
+    order:1;
+    align-self:flex-end;
+    background-color:#673AB7;
+  }
+  :root{
+    --backColor:#eee;
+    --itemColor:#ddd;
+    --fontColor:#000;
+    --mainPadding:15px;
+    --mainMargin:20px;
+    --mainBorder: 15px solid #eee;
+  }
+
+.page{
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    padding: var(--mainPadding);
+    background-color: var(--backColor);
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.header{
+  background-color: var(--itemColor);
+  display:flex;
+  justify-content: space-between;
+  border-bottom: var(--mainBorder);
+  height: 80px;
+}
+.header .links{
+  width:85%;
+  list-style-type:none;
+  display:flex;
+  justify-content: flex-end;
+  
+}
+.header .links li{
+  display:flex;
+  padding-right: var(--mainPadding);
+  align-items:center;
+  justify-content:center;
+}
+.header .logo{
+  width: 15%;
+  display:flex;
+  font-size:25px;
+  align-items:center;
+  justify-content:center;
+  border-right: var(--mainBorder);
+  padding: var(--mainPadding);
+}
+.main-area{
+  height:410px;
+  background-color: var(--itemColor);
+  display: flex;
+  border-bottom: var(--mainBorder);
+  
+}
+.main-area .content{
+  width: 62%;
+  padding: var(--mainPadding);
+  border-right: var(--mainBorder);
+}
+.main-area .sidebar{
+  width: 38%;
+  padding: var(--mainPadding);
+}
+.page .footer {
+  display: flex;
+  background-color: var(--itemColor);
+  padding: var(--mainPadding);
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
