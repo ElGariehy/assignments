@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    color: #A8A8A8;
+    padding: 8px 0 15px 0;
+    font-size: smaller;
+}
+h4{
+    font-size: smaller;
+}
+p{
+    padding: 15px 0;
+    font-size: smaller;
+}
+.team{
+    width: 100%;
+    background-color: #eee;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 50px;
+}
+.team div{
+    background-color: #fff;
+    color: #000;
+    align-content: flex-start;
+    display: grid;
+    position: relative;
+    padding: 20px;
+}
+
+.team div::before{
+    content: ' \0022';
+    font-size: 55px;
+    right: 10px;
+    color: #A8A8A8;
+    bottom: -25px;
+    /* width: 100%; */
+    position: absolute;
+}
+.team div::after{
+    content:"";
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    border-bottom: 3px solid #FE3D00;
+}
+.team .three,
+.team .five,
+.team  .eight{
+    background-color: #000;
+    color: #fff;
+}
+.team .one{
+    display: grid;
+    grid-column: span 2;
+}
+.team .three{
+    display: grid;
+    grid-row: span 3;
+}
+.team .four{
+    display: grid;
+    grid-row: span 2;
+}
+.team .five{
+    display: grid;
+    grid-column: span 2;
+}
+.team .six{
+    display: grid;
+    grid-column: span 2;
+}
