@@ -1,0 +1,180 @@
+:root{
+    --mainOrange: #FF5722;
+    --mainTeal: #009688;
+    --mainColor: white;
+}
+
+.p1{
+    margin: 60px auto;
+    width: 150px;
+    background-color: var(--mainOrange);
+    color: var(--mainColor);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.p1::after, .p1::before{
+    background-color: var(--mainOrange);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.p1::after{
+    z-index: -1; 
+    transform: skew(5deg ,5deg);
+    -webkit-transform: skew(5deg ,5deg);
+    -moz-transform: skew(5deg ,5deg);
+    -ms-transform: skew(5deg ,5deg);
+    -o-transform: skew(5deg ,5deg);
+}
+.p1::before{
+    z-index: -1;
+    transform: skew(-5deg ,-5deg);
+    -webkit-transform: skew(-5deg ,-5deg);
+    -moz-transform: skew(-5deg ,-5deg);
+    -ms-transform: skew(-5deg ,-5deg);
+    -o-transform: skew(-5deg ,-5deg);
+}
+.p2{
+    margin: 60px auto;
+    width: 150px;
+    background-color: var(--mainTeal);
+    color: var(--mainColor);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.p2::after, .p2::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 100%;
+    top: 0;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+.p2::after{
+    background-color: inherit;
+    left: -10px;
+    z-index: 0;
+}
+.p2::before{
+    width: 50px;
+    left: -34px;
+    background-color: #fff;
+    z-index: -1;
+}
+/*
+    Part 3
+    .class {
+        matrix(3,0.2679,0,3,20,100):;
+        matrix(scaleX(3),skewY(0.2679),skewX(0),scaleY(3),translateX(20),translateY(100)):;
+}
+ */
+
+.p4{
+    width: 200px;
+    height: 200px;
+    background-color: #607D8B;
+    margin: auto;
+    border-bottom: 4px solid black;
+    position: relative;
+    margin: 200px auto 10px auto;
+}
+.p4::after{
+    position: absolute;
+    content: "Elzero";
+    color: #fff;
+    bottom: 5px;
+    left: 10px;
+}
+.p4::before{
+    position: absolute;
+    content: "";
+    width: 138px;
+    height: 138px;
+    left: 29px;
+    top: -71px;
+    background-color: black;
+    margin: auto;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.con1, .con2{
+    
+    perspective: 800px;
+}
+.box, .box2{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+.box:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.box .face, .box2 .face2{
+    
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.box .front, .box2 .front2{
+    background-color: #FA3664;
+}
+.box .back, .box2 .back2{
+    background-color: #1692FC;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+/* //////////////////////////////// */
+
+.box2:hover{
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+
+.box2 .back2{
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
