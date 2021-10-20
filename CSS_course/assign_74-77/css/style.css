@@ -1,0 +1,149 @@
+.p1{
+    width: 78px;
+    height: 78px;
+    margin: 50px auto;
+    border: 8px solid #1692FC;
+    position: relative;
+    /*animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    */
+    animation-delay: .5s;
+    animation-fill-mode: both;
+    animation: rotate 1s infinite linear;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top-color: transparent;
+    -webkit-animation: rotate 1s infinite linear;
+}
+.p1:hover{
+    animation-play-state: paused;
+}
+@keyframes rotate{
+
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    } 
+}
+.p1::after,
+.p1::before{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.p1::before{  
+    width: 105px;
+    height: 105px;
+    border: 8px solid #FCAB00;
+    left: -22px;
+    top: -22px;
+    animation-delay: .25s;
+    border-right-color: transparent;
+    
+}
+.p1::after{
+    width: 50px;
+    height: 50px;
+    left: 6px;
+    top: 6px;
+    border: 8px solid #FA3664;
+    border-bottom-color: transparent;
+}
+
+/* /////////////////////////////////////////// */
+.p2{
+    width: 90px;
+    height: 90px;
+    margin: 50px auto;
+    border: 5px solid #000;
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-play-state: paused;
+}
+
+.p2::before{
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    left: 5px;
+    top: 5px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 5px solid#FCAB00;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.p2::after{ 
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    top: 15px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 5px solid#1692FC;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.p2:hover,
+.p2:hover::after,
+.p2:hover::before{
+    animation-play-state: running;
+    animation-name: rotate;
+}
+
+/* --------------p3---------- */
+.p3{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    display: block;
+    margin: 50px auto;
+    border: 8px solid black;
+    border-bottom-color: transparent;
+    animation-name: rotate;
+    animation-direction: reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
