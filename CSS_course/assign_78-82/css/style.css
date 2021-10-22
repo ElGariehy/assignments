@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+}
+body{
+    margin: 50px auto;
+    left: 50%;
+}
+/* part1 */
+.part1 div[class="main red"]{
+    color: red;
+}
+/* part1 */
+
+/* part2 */
+.parent2 > div:nth-child(2){
+    color: red;
+}
+/* part2 */
+
+/* part3 */
+.parent3 .baby:only-child{
+    color: red;
+}
+/* part3 */
+
+/* part4 */
+.part4 > [title]:not(.no-need){
+    color: red;
+}
+/* part4 */

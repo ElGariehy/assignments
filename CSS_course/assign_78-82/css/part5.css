@@ -1,0 +1,7 @@
+
+
+
+
+ div:nth-child(2) div:only-of-type{
+    color: red;
+}
