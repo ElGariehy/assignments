@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+@media print {
+    .assign-one{
+        font-size: 40px;  
+    }
+}
+/* ////////////////////////////////////////// */
+.assign-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.assign-two>div{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 10px 15px 10px;
+    width: 100%;
+}
+/* small & mobiles 768px*/
+@media (max-width:991px) {
+    .assign-two >div{
+        width: 100%;
+        background-color: #eee;
+    }
+    .assign-two h2{
+        color: black;
+    }
+}
+/* Medium 992px*/
+@media (min-width:992px) {
+    .assign-two >div{
+        width: calc(50% - 25px);
+        background-color: #eee;
+    }
+    .assign-two h2{
+        color: red;
+    }
+}
+/* large 1200px */
+@media (min-width:1200px) {
+    .assign-two >div{
+        width: calc(25% - 25px);
+        background-color: #eee;
+    }
+    .assign-two h2{
+        color: teal;
+    }
+}
+/* ////////////////////////////////////////// */
+.assign-three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.assign-three>div{
+    background-color: #ddd;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 10px 15px 10px;
+    width: 100%;
+}
+/* small & mobiles 768px*/
+@media (max-width:991px) {
+    .assign-three >div{
+        width: 100%;
+        background-color: #eee;
+    }
+    .assign-three h2{
+        color: black;
+    }
+}
+/* Medium 992px */
+@media (min-width:992px) {
+    .assign-three .one{
+        width: calc(100% - 25px);
+    }
+    .assign-three .two,
+    .assign-three .three,
+    .assign-three .four{
+        width: calc((100% / 3) - 25px);
+    }
+    .assign-three h2{
+        color: red;
+    }
+}
+/* large */
+@media (min-width:1200px) {
+    .assign-three h2{
+        color: teal;
+    }
+    .assign-three .one,
+    .assign-three .four{
+        width: calc(100% - 25px);
+    }
+    .assign-three .two,
+    .assign-three .three{
+        width: calc(50% - 25px);
+    }
+
+}
