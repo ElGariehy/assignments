@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.arrow{
+    width: 800px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 50px auto;
+    padding-left: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.center-item{
+    display: flex;
+    align-items: center;
+}
+
+.top::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+.right::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+.bottom::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+.left::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
